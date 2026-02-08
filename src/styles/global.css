@@ -8,3 +8,9 @@
     --color-everforest-purple: oklch(0.7501 0.0818 349.18);
     --color-everforest-blue: oklch(0.7487 0.0631 185.5);
 }
+
+@layer components {
+    .title {
+        @apply text-2xl font-semibold text-everforest-yellow;
+    }
+}

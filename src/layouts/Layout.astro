@@ -1,6 +1,11 @@
 ---
 import '../styles/global.css'
 import Footer from '../components/Footer.astro'
+
+type Props = {
+	title: string
+}
+const { title } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="m-0 w-full h-full">
@@ -10,7 +15,7 @@ import Footer from '../components/Footer.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
 	<body class="m-0 max-w-xl min-h-screen font-mono mx-auto flex flex-col pt-16 antialiased bg-global-bg text-global-text">
 		<main id="main">

@@ -1,11 +1,20 @@
 ---
-import Home from '../components/Home.astro'
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Home/>
+<Layout title="Home">
+	<div class="text-sm">
+		<section>
+			<h1 class="title mb-12">Hello World</h1>
+			<p class="mb-4">
+				This website is currently under construction. More to come soon...
+			</p>
+			<p>Find me on</p>
+		</section>
+		<section class="mt-16">
+			<h2 class="text-xl font-semibold text-everforest-blue mb-6">Posts</h2>
+			<p class="mb-4">Nothing yet...</p>
+		</section>
+	</div>
 </Layout>
