@@ -1,0 +1,1 @@
+- Use `pnpm` instead of `npm`, and the same goes for using `pnpm dlx` instead of `npx` when running npm scripts.
